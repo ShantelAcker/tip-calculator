@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Tip Calculator</h1>
+        </header>
+        <main>
+            
+            <form>
+                <label for="total">Total Bill:</label>
+                <input type="text" name="total" id="total" placeholder="total bill amount">
+                
+                
+                    <p>Tip Amount:<p>
+                    <input name="tip-amount" type="radio" id="5" value="5">
+                    <label for="5">5%</label>
+                    
+                    <input name="tip-amount" type="radio" id="10" value="10">
+                    <label for="10">10%</label>
+
+                    <input name="tip-amount" type="radio" id="15" value="15">
+                    <label for="15">15%</label>
+
+                    <input name="tip-amount" type="radio" id="20" value="20">
+                    <label for="20">20%</label>
+
+                    <input name="tip-amount" type="radio" id="30" value="30">
+                    <label for="30">30%</label> <br />
+                
+                    
+                    <label for="split">Split:</label>
+                    <input type="text" name="split" id="split" pattern="[0-9]" required placeholder="number of people"> <br />
+
+                    <button type="button">Calculate</button>
+                
+                
+            </form>
+        </main>
+    </div>
+
+</body>
+</html>
