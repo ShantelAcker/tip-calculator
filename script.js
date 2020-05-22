@@ -1,13 +1,12 @@
-//variables
-var totalBill = Number(document.getElementById('total').innerHTML);
-var tipPercent = document.getElementById("tip").value;
+var totalBill = Number(document.getElementById('total').value);
 var split = Number(document.getElementById("split").value);
+var tip = Number(document.getElementById('tip').value);
 
-//calculations
-var tip = totalBill/.15;
-var tipValue = bill * (tipPercent / 100);
-var newBillEach = (bill + tipValue) / split;
-var tipEach = tipValue / split;
+const calculate = () => {
+    var tipPercent = tip/100;
+    var newBill = (totalBill * tipPercent) + totalBill;
+    var billPerPerson = newBill / split;
+    document.getElementById("output").innerHTML = "$" + billPerPerson.toFixed(2);
+}
 
-//output
-console.log(tip);
+document.getElementById("button").addEventListener("click", calculate);
