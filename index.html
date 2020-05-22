@@ -17,8 +17,8 @@
                 <label for="total">Total Bill:</label>
                 <input type="text" name="total" id="total" placeholder="total bill amount">
                 
-                
-                    <p>Tip Amount:<p>
+                <br />
+                    <!-- <label for="tip-amount">Tip Amount:</label>
                     <input name="tip-amount" type="radio" id="5" value="5">
                     <label for="5">5%</label>
                     
@@ -32,17 +32,21 @@
                     <label for="20">20%</label>
 
                     <input name="tip-amount" type="radio" id="30" value="30">
-                    <label for="30">30%</label> <br />
-                
+                    <label for="30">30%</label> <br /> -->
+                    <label for="tip">Tip (%):</label>
+                    <input type="number" name="tip" id="tip" placeholder = "tip percentage" min="1" max="100">
+                    <br />
                     
                     <label for="split">Split:</label>
-                    <input type="text" name="split" id="split" pattern="[0-9]" required placeholder="number of people"> <br />
+                    <input type="text" name="split" id="split" placeholder="number of people"> <br />
 
-                    <button type="button">Calculate</button>               
+                    <button type="button" id="button">Calculate</button>               
                 
             </form>
-
+            
+            <h2>Total Per Person:</h2> 
             <span id="output"></span>
+
         </main>
     </div>
 <script src="script.js"></script>
